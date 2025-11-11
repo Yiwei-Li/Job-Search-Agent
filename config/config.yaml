@@ -1,0 +1,16 @@
+TargetRoles:
+  - data scientist
+  - data analyst
+  - data engineer
+  - machine learning engineer
+  - AI engineer
+  - business analyst
+  - analytics
+  - programmer
+  - data architect
+  - analyst
+Preferences: 
+  - Exclude genetics, genomics, molecular, or biology related roles.
+  - Exclude postdoctoral roles.
+  - Exclude management or people-lead roles.
+  - Open to any industry.
