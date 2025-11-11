@@ -20,11 +20,14 @@
 ```bash
 .
 ├─ main.py                 # entrypoint – scraping + LLM filtering + CSV + email
+├─ .env                    # OpenAI key, email settings, paths (you need to set up)
+├─ requirements.txt        # Python dependencies
 ├─ results/                # output CSVs (auto‑created)
 ├─ misc/                   # place Chrome for Testing app folder here (required)
-├─ config.yaml             # your preferences & target roles (you need to set up)
-├─ .env                    # OpenAI key, email settings, paths (you need to set up)
-└─ requirements.txt        # Python dependencies
+└─ config/                 # configuration files
+   ├─ blocklist.txt        # blocklist employer names (you may add more)
+   ├─ config.yaml          # your preferences & target roles (you need to set up)
+   └─ parsed_job_ids.txt   # jobids from the previous run
 ```
 
 > ⚠️ The Chrome for Testing **application folder must be inside `misc/`** exactly.
@@ -76,7 +79,7 @@ pip install -r requirements.txt
 ```
 
 
-### 3) Configure your `.env`
+### 3) Configure `.env`
 
 Paste in the `OpenAI API Key` and `Gmail App Password`. Set up the `Sender Email` and `Recipient Email`. The `.env` file is located in the project root.
 
@@ -93,7 +96,7 @@ GMAIL_APP_PASSWORD="abcdefghijklmnop"     # 16-char app password
 > ⚠️ You only need to get App Password for the Sender Email. You can also set the Recipietn Email to be the same as the Sender Email.
 
 
-### 4) Create your `config.yaml`
+### 4) Configure `config.yaml`
 
 Minimal example (tweak freely):
 
