@@ -3,6 +3,9 @@
 > **Auto‑parse LinkedIn job searches, LLM‑filter what fits you, and get a tidy CSV in your inbox.**
 
 
+<br>
+
+
 ## ✨ Highlights
 
 * **One‑click run**: open Chrome, set your filters once, press Enter – the tool learns your search URL.
@@ -40,13 +43,13 @@
 
 ### 1) Prerequisites
 
-* **Python** 3.10+ (recommended)
+* **Python** 3.10+
 
 * **Chrome for Testing** (CfT)
     * Download CfT for your OS (Arm64/Intel as appropriate) **[here](https://googlechromelabs.github.io/chrome-for-testing/)**
     * Select the build that matches your machine
 <p align="center">
-<img src="misc/instructions/CfT_download_page.png" alt="CfT Download Page" width="800">
+<img src="misc/images/CfT_download_page.png" alt="CfT Download Page" width="800">
 </p>
 
 * Unzip and move the **entire application folder** into this repo at **./misc/** exactly.
